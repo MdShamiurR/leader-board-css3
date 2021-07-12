@@ -122,6 +122,10 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
+    
+    
+    
+    
 }
 .course-info{
     display: flex;
@@ -158,4 +162,28 @@ hr{
 .fa-clock.colored{
     color: 
     #FF4A60;
+}
+
+/* for small device */
+@media only screen and (max-Width:688px){
+    .container{
+        width: 100%;
+    }
+    .players ,.blogs , .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player ,.blog , .course{
+        flex-direction: column;
+    }
+}
+    
+/* for ipad  */
+@media only screen and (min-width:688px)and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .courses , .players{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    
 }
