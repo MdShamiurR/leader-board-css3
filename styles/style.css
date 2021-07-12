@@ -118,6 +118,16 @@ hr{
     align-items: center;
 }
 /* course style  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .course .course-banner img{
     width: 224px;
@@ -132,4 +142,20 @@ hr{
 }
 .fa-star.empty{
     color: #AEAEAE;;
+}
+.course-duration{
+    background-color:#FFE4E8;
+    Width :94.83px;
+    Height :29.38px;
+    Top :1124.38px;
+    Left :458.58px;
+    border-radius :14.69px;
+    text-align: center;
+    color: 
+    #FF4A60;
+    
+}
+.fa-clock.colored{
+    color: 
+    #FF4A60;
 }
